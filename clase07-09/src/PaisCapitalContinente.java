@@ -13,6 +13,19 @@ public class PaisCapitalContinente {
 		}
 	}
 
+	void ordenar() {
+		for(int i=0; i<2;i++) {
+			for(int j=i+1; j<3;j++) {
+				if(paCapCont[i][0].compareTo(paCapCont[j][0])>0) {
+					 String[] aux= paCapCont[i];
+					 paCapCont[i]=paCapCont[j];
+					 paCapCont[j]=aux;
+				}
+			}
+			
+		}
+	}
+	
 	void mostrar() {
 		System.out.printf("%18s%18s%18s\n", "PAIS", "CAPITAL", "CONTINENTE");
 		for (int i = 0; i < 3; i++) {

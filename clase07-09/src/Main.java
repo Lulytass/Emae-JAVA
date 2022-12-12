@@ -19,5 +19,7 @@ public class Main {
 		PaisCapitalContinente pais = new PaisCapitalContinente();
 		pais.cargar();
 		pais.mostrar();
+		pais.ordenar();
+		pais.mostrar();
 	}
 }

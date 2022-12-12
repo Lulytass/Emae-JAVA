@@ -11,9 +11,9 @@ public class AlumnosConNotas {
 			nombres[i] = teclado.nextLine();
 		}
 		for (int j = 0; j < 4; j++) {
-			System.out.print("Ingrese la nota de "+nombres[j]);
+			System.out.print("Ingrese la nota de " + nombres[j]);
 			notas[j] = teclado.nextInt();
-			}
+		}
 	}
 
 	void mostrar() {
@@ -26,14 +26,14 @@ public class AlumnosConNotas {
 		float auxNota;
 		String auxNom;
 		for (int i = 0; i < 3; i++) {
-			for(int j=i+1;j<4;j++) {
-				if(notas[i]>notas[j]) {
-					auxNota=notas[i];
-					notas[i]=notas[j];
-					notas[j]=auxNota;
-					auxNom=nombres[i];
-					nombres[i]=nombres[j];
-					nombres[j]=auxNom;
+			for (int j = i + 1; j < 4; j++) {
+				if (notas[i] > notas[j]) {
+					auxNota = notas[i];
+					notas[i] = notas[j];
+					notas[j] = auxNota;
+					auxNom = nombres[i];
+					nombres[i] = nombres[j];
+					nombres[j] = auxNom;
 				}
 			}
 		}
